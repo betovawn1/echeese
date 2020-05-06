@@ -1,0 +1,27 @@
+.vtex-account .vtex-account__menu .vtex-account__user-info .vtex-account__user-image > button {
+    background: $color-primary
+}
+
+.vtex-account .vtex-account__menu {
+    width: 30% !important;
+    @media (max-width: 768px) {
+        width: 100% !important;
+    }
+}
+
+.vtex-account header .vtex-pageHeader-link__container > button span {
+    color: $color-primary
+}
+
+.vtex-account header a > .vtex-button {
+    border-color: $color-primary;
+    background-color: $color-primary
+}
+
+.vtex-account .vtex-account__page-body footer button span {
+    color: $color-primary
+}
+
+.vtex-account aside .vtex-account__menu-links .b--action-primary {
+    border-color: $color-primary
+}

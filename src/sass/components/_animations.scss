@@ -1,0 +1,29 @@
+.animated-button-swipe-right {
+    border: 0;
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    transition: all .35s;
+    background-color: $color-primary;
+    span {
+        z-index: 1;
+        position: relative;
+        color: $color-light;
+    }
+    &:after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        transition: all .35s;
+        border-radius: .25rem;
+        background-color: $color-secondary;
+    }
+    &:hover {
+        &:after{
+            width: 100%;
+        }
+    }
+}

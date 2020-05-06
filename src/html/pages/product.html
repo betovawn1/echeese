@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+    <head>
+        <title>Castropil</title>
+        <vtex:metaTags />
+        <vtex:template id="commonStyles" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body id="product-page">
+        <div class="page">
+            <vtex:template id="Header" />
+            <section id="product-content" class="container">
+                <div id="box-bread-brumb">
+                    <vtex.cmc:breadCrumb />
+                </div>
+                <div class="row product-details">
+                    <div class="product-image col-sm-12 col-xl-6 text-center">
+                        <vtex.cmc:ProductImage zoom="on" />
+                    </div>
+                    <div class="product-info col-sm-12 col-xl-6 mb-3 mb-xl-0 mt-5 mt-lg-0">
+                        <div class="product-name">
+                            <h1>
+                                <vtex.cmc:productName />
+                            </h1>
+                        </div>
+                        <div class="codigo-avaliacoes row hidden-xs">
+                            <div class="codigo-produto col-xs-12 col-lg-6">
+                                <span>Código de Referência: </span>
+                                <vtex.cmc:skuReference />
+                            </div>
+                            <div class="avaliacoes">
+                                <a href="#reviews" class="link-ancora">
+                                    <vtex.cmc:evaluationRate />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="price-box">
+                            <vtex.cmc:SellerOptions />
+                            <vtex.cmc:skuPrice />
+                            <vtex.cmc:SalesChannelDropList />
+                            <vtex.cmc:stockKeepingUnitService />
+                        </div>
+                        <div class="seletor-sku ">
+                            <vtex.cmc:stockKeepingUnitSelection />
+                        </div>
+                        <div class="pronta-entrega">
+                            <span>
+                                <img src="/arquivos/pronta_entrega.png" alt="Check" />
+                            </span>
+                            Pronta Entrega
+                        </div>
+                        <div class="buy-button-box hidden-xs ">
+                            <vtex.cmc:BuyButton />
+                        </div>
+                        <div class="shipping-box">
+                            <div class="shipping-box-title">
+                                <span>Calcular Frete</span>
+                            </div>
+                            <vtex.cmc:shippingValue />
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+                                    ShippingValue();
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <div id="reviews" class="rating">
+                    <vtex.cmc:UserReview/>
+                </div>
+                <div class="main-showcase">
+                    <vtex:contentPlaceHolder id="Quem-viu-viu-tambem" />
+                </div>
+            </section>
+            <vtex:template id="Footer" />
+        </div>
+    </body>
+    <vtex:template id="commonScripts" />
+</html>

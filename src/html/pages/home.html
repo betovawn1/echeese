@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+    <head>
+        <title>Castropil</title>
+        <vtex:metaTags />
+        <vtex:template id="commonStyles" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body id="home-page">
+        <div class="page">
+            <!--  SubTemplate: Header -->
+            <vtex:template id="Header" />
+            <!-- /SubTemplate: Header -->
+
+            <section id="home-content" class="container-fluid">
+                <div class="row">
+                    <div class="fullbanner">
+                        <picture>
+                            <source media="(min-width: 575px)" srcset="./arquivos/banner_top_desktop.jpg" />
+                            <source media="(min-width: 0px)" srcset="./arquivos/banner_top_mobile.jpg" />
+                            <img src="./arquivos/banner_top_desktop.jpg" alt="Castropil" />
+                        </picture>
+                    </div><!-- .fullbanner -->
+                </div>
+
+                <div class="container">
+                    <div class="ruler row flex-wrap align-items-center justify-content-center justify-content-lg-between mt-3 mx-auto">
+                        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-center">
+                            <img src="./arquivos/ruler-1.png" />
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 d-none d-lg-flex align-items-center justify-content-center mt-3 mt-sm-0">
+                            <img src="./arquivos/ruler-2.png" />
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 d-none d-lg-flex align-items-center justify-content-center mt-3 m-lg-0">
+                            <img src="./arquivos/ruler-3.png" />
+                        </div>
+                    </div>
+
+                    <div id="Colecao1">
+                        <!-- Custom Title Colecao - Init -->
+                        <div class="custom-title-colecao p-relative d-flex flex-row justify-content-center mt-4">
+                            <span class="custom-bg-color-light px-3 custom-z-index-1">
+                                <h3 class="text-uppercase d-inline-block mb-0 custom-bg-color-primary custom-text-8 custom-text-color-light p-3 custom-rounded-1 font-weight-bolder">destaques</h3>
+                            </span>
+                        </div>
+                        <!-- Custom Title Colecao - End -->
+                        <div class="main-showcase">
+                            <vtex:contentPlaceHolder id="Lancamentos" />
+                        </div>
+                    </div>
+
+                    <div class="container bottombanner-container">
+                        <div class="bottombanner">
+                            <picture>
+                                <source media="(min-width: 575px)" srcset="./arquivos/banner_vitrine_desktop.jpg" />
+                                <source media="(min-width: 0px)" srcset="./arquivos/banner_vitrine_mobile.jpg" />
+                                <img src="./arquivos/banner_vitrine_desktop.jpg" alt="Oferta" />
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div id="Colecao2">
+                        <!-- Custom Title Colecao - Init -->
+                        <div class="custom-title-colecao p-relative d-flex flex-row justify-content-center mt-5">
+                            <span class="custom-bg-color-light px-3 custom-z-index-1">
+                                <h3 class="text-uppercase d-inline-block mb-0 custom-bg-color-primary custom-text-8 custom-text-color-light p-3 custom-rounded-1 font-weight-bolder">lançamentos</h3>
+                            </span>
+                        </div>
+                        <!-- Custom Title Colecao - End -->
+                        <div class="main-showcase">
+                            <vtex:contentPlaceHolder id="Beach-Tennis" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-newsform container">
+                    <!-- Custom Title Colecao - Init -->
+                    <div class="custom-title-colecao p-relative d-flex flex-row justify-content-center mt-0">
+                        <span class="custom-bg-color-light px-3 custom-z-index-1">
+                            <h3 class="text-uppercase d-inline-block mb-0 custom-bg-color-primary custom-text-8 custom-text-color-light p-3 custom-rounded-1 font-weight-bolder">newsletter</h3>
+                        </span>
+                    </div>
+                    <!-- Custom Title Colecao - End -->
+                    <div class="newsletter" id="newsletterForm">
+                        <div class="newsletter-icon d-none d-md-block">
+                            <img src="/arquivos/newsletter-icon.png" />
+                        </div>
+                        <fieldset>
+                            <p>Cadastre-se e receba em seu e-mail novidades, promoções e ofertas da loja</p>
+                            <div>
+                                <input id="newsletterClientName" onfocus="newsSelect(this,'Digite seu nome');"
+                                    onblur="newsLeave(this,'Digite seu nome');" class="newsletter-client-name"
+                                    placeholder="Digite seu nome" size="20" type="text" name="newsClientName" />
+                                <input id="newsletterClientEmail" onfocus="newsSelect(this,'Digite seu e-mail');"
+                                    onblur="newsLeave(this,'Digite seu e-mail');" class="newsletter-client-email"
+                                    placeholder="Digite seu e-mail" size="20" type="text" name="newsletterClientEmail" />
+                                <input id="newsletterButtonOK" class="btn-ok newsletter-button-ok" value="assinar"
+                                    type="button" name="newsletterButtonOK" />
+                            </div>
+                            <p style="display: none;" class="newsSucess">Inscrição realizada com sucesso!</p>
+                            <p style="display: none;" class="newsError">Insira um endereço de e-mail correto.</p>
+                        </fieldset>
+                    </div>
+                </div>
+            </section>
+
+            <!--  SubTemplate: Footer -->
+            <vtex:template id="Footer" />
+            <!-- /SubTemplate: Footer -->
+        </div>
+    </body>
+    <vtex:template id="commonScripts" />
+</html>

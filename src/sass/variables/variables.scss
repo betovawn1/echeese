@@ -1,0 +1,79 @@
+/* Colors */
+$color-primary: #ff700f;
+$color-secondary: #0074bd;
+$color-light: #ffffff;
+$color-dark: #010202;
+$color-grey: #9c9c9c;
+$color-medium-grey: #d9d9d9;
+$color-light-grey: #f7f7f7;
+
+.custom-text-color-light-grey { color: $color-light-grey !important }
+.custom-text-color-secondary { color: $color-secondary !important }
+.custom-text-color-primary { color: $color-primary !important }
+.custom-text-color-light { color: $color-light !important }
+.custom-text-color-dark { color: $color-dark !important }
+.custom-text-color-grey { color: $color-grey !important }
+
+.custom-bg-color-light-grey { background-color: $color-light-grey !important }
+.custom-bg-color-secondary { background-color: $color-secondary !important }
+.custom-bg-color-primary { background-color: $color-primary !important }
+.custom-bg-color-light { background-color: $color-light !important }
+.custom-bg-color-dark { background-color: $color-dark !important }
+.custom-bg-color-grey { background-color: $color-grey !important }
+
+/* Fonts */
+$font-primary: Verdana, sans-serif;
+$font-secondary: Arial, sans-serif;
+
+.custom-font-primary { font-family: $font-primary !important }
+.custom-font-secondary { font-family: $font-secondary !important }
+
+/* Text-Size */
+$text-size-1:  10px;
+$text-size-2:  11px;
+$text-size-3:  12px;
+$text-size-4:  13px;
+$text-size-5:  14px;
+$text-size-6:  15px;
+$text-size-7:  18px;
+$text-size-8:  20px;
+$text-size-9:  22px;
+$text-size-10: 25px;
+$text-size-11: 35px;
+
+.custom-text-1  { font-size: $text-size-1  }
+.custom-text-2  { font-size: $text-size-2  }
+.custom-text-3  { font-size: $text-size-3  }
+.custom-text-4  { font-size: $text-size-4  }
+.custom-text-5  { font-size: $text-size-5  }
+.custom-text-6  { font-size: $text-size-6  }
+.custom-text-7  { font-size: $text-size-7  }
+.custom-text-8  { font-size: $text-size-8  }
+.custom-text-9  { font-size: $text-size-9  }
+.custom-text-10 { font-size: $text-size-10 }
+.custom-text-11 { font-size: $text-size-11 }
+
+/* Border */
+$border-1: 15px;
+
+.custom-rounded-1 { border-radius: $border-1 !important }
+
+/* Z Index */
+$index-1: 1;
+
+.custom-z-index-1 { z-index: 1 }
+
+/* Position */
+.p-relative { position: relative }
+
+/* Bootstrap */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1165px;
+    }
+}
+
+/* Overflow */
+.overflow-visible {
+    overflow: visible !important;
+}

@@ -1,0 +1,35 @@
+/* Variables */
+@import './variables/variables';
+
+/* Components */
+@import './components/custom-title-colecao';
+@import './components/my-account';
+@import './components/breadcrumbs';
+@import './components/newsletter';
+@import './components/animations';
+@import './components/hamburger';
+@import './components/minicart';
+
+/* Shared */
+@import './shared/header';
+@import './shared/footer';
+
+/* Pages */
+@import './pages/home';
+@import './pages/product';
+@import './pages/vitrines';
+@import './pages/department';
+
+/* Institucionals */
+@import './pages/quem-somos';
+@import './pages/nossas-lojas';
+@import './pages/institucional';
+
+body {
+    overflow-x: hidden;
+    font-family: $font-primary;
+}
+
+#admake-advanced-filter {
+    display: none !important;
+}

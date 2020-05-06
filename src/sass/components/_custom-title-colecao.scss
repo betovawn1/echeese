@@ -1,0 +1,13 @@
+.custom-title-colecao {    
+    &:after {
+        content: '';
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 2px;
+        background-color: #ff700f;
+        z-index: 0;
+    }
+}

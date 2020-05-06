@@ -1,0 +1,123 @@
+.main-showcase {
+  ul {
+    margin: 0 !important;
+    @media (max-width: 991px) {
+      margin-bottom: 30px !important;
+      display: flex;
+      flex-flow: wrap;
+      justify-content: center;
+    }
+    li {
+      &:nth-child(odd) {
+        width: 25% !important;
+        padding: 0 !important;
+        @media (max-width: 991px) {
+          width: 33% !important;
+          padding: 15px 5px !important;
+        }
+        @media (max-width: 768px) {
+          width: 50% !important;
+        }
+      }
+    }
+  }
+  .buy-button-showcase-shelf {
+    font-size: 15px;
+  }
+}
+
+.prateleira{
+  h2{
+    display: none;
+  }
+  li{   
+    width: 100% !important;
+    // @media(max-width: 992px){
+    //   width: 50% !important;
+    // }
+  }
+  .box-item {
+    border-radius: 5px;
+    border: 1px solid transparent;
+    &:hover{
+      border-color: $color-primary;
+    }
+    .product-image:after {
+      display: none;
+    }
+    .product-name {
+      a {
+        color: black;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 20px;
+        display: block;
+        text-align: initial;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .box-item:hover img {
+    opacity: 100% !important;
+  }
+  .price{
+    text-align: initial;
+    span.best-price {
+      display: block;
+      color: #0a80c5;
+      font-size: 25px;
+      font-weight: 700;
+      &:before {
+        content: "Por apenas:";
+        display: block;
+        color: black;
+        font-size: 12px;
+        font-weight: 100;
+        margin-bottom: 3px;
+      }
+    }
+  }
+  .wrapper-buy-button-asynchronous {
+    a {
+      cursor: pointer;
+      width: auto;
+      text-align: center;
+      color: $color-light;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: bold;
+      height: 38px;
+      background-color: $color-primary;
+      margin-top: 15px;
+      &:hover{
+        background-color: $color-primary;
+      }
+    }
+  }  
+}
+
+.product-image {
+  .product-seal {
+    width: 100%;
+    img {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .prateleira {
+    .box-item {
+      padding: 0 !important;
+      border: 0 !important;
+      .product-name {
+        a {
+          height: 40px;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}

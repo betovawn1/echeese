@@ -1,0 +1,186 @@
+.footer {
+    border-top: 10px solid $color-secondary;
+    border-bottom: none;
+    background-color: $color-light-grey;
+    padding: 15px 0 30px;
+    border-bottom: 10px solid #dadada;
+    b {
+        color: $color-secondary;
+        font-size: $text-size-7;
+        font-weight: 700;
+        margin-left: 0;
+        padding-left: 0;
+        &:before {
+            content: "»";
+            font-size: 25px;
+            margin-right: 10px;
+            display: inline-block;
+        }
+    }
+    .apps {
+        .wrap {
+            ul {
+                padding-left: 23px;
+            }
+            &.footer-socials {
+                b {
+                    @media (min-width: 1200px) {
+                        padding-top: 46px;
+                    }
+                }
+                ul {
+                    li {
+                        &:first-child {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .col-inst-duvidas {
+        ul {
+            margin-top: 7px;
+            padding-left: 38px !important;
+            li {
+                a {
+                    font-size: 12px !important;
+                }
+            }
+        }
+        li {
+            list-style: disc;
+            margin-bottom: 10px;
+            // @media (max-width: 992px) {
+            //     list-style: none;
+            // }
+        }
+        // @media (max-width: 992px) {
+        //     text-align: center;
+        //     list-style: none;
+        // }
+    }
+    .apps {
+        .col-social {
+            margin: 15px;
+            margin-top: 0;
+            width: 170px;
+            // @media (max-width: 768px) {
+            //     margin: 0;
+            // }
+                a {
+                    width: unset;
+                    height: max-content;
+                }
+                // @media (max-width: 992px) {
+                //     text-align: -webkit-center;
+                //     justify-content: center;
+                // }
+            
+        }
+        // @media(max-width: 992px){
+        //     text-align: -webkit-center;
+        //     justify-content: center;
+        // }
+        
+        .apps div {
+            padding-left: 40px;
+            // @media(max-width: 768px){
+            //     padding-left: 55px;
+            // }
+        }
+    } 
+    .col-televendas {
+        padding-top: 20px;
+        @media (max-width: 1200px) {
+            padding-top: 6px;
+        }
+        .televendas {
+            background-color: $color-secondary;
+            border-radius: 10px;
+            text-align: center;
+            color: $color-light;
+            font-family: Arial;
+            h3 {
+                font-weight: bold;
+                padding-top: 20px;
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            .televendas-inside {
+                contain: content;
+                span {
+                    color: $color-light;
+                    font-size: $text-size-9;
+                } 
+                a {
+                    font-weight: 700;
+                    color: $color-light;
+                    font-size: $text-size-5;
+                    text-decoration: underline;
+                }
+            }                              
+        }
+    }                  
+    .col-lojas {
+        ul {
+            padding-left: 28px;
+            li {
+                line-height: 2;
+                list-style: disc;
+                color: $color-secondary;
+                font-size: $text-size-5;
+                strong {
+                    color: $color-secondary;
+                    @media (max-width: 575px) {
+                        display: block;
+                    }
+                    @media (min-width: 576px) {
+                        &:after {
+                            content: '-';
+                            margin-left: 3px;
+                        }
+                    }
+                }
+                p {
+                    color: $color-dark;
+                }
+                span {
+                    font-size: $text-size-5;
+                    font-weight: bold;
+                    line-height: 2;
+                    @media (max-width: 575px) {
+                        display: block;
+                    }
+                    @media (min-width: 576px) {
+                        &:before {
+                            content: '-';
+                            margin-right: 3px;
+                            color: $color-secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.copy-right {
+    @media (max-width: 992px) {
+        text-align: center;
+    }
+    p {
+        color: $color-dark;
+        font-size: 12px;
+        font-weight: 200;
+        line-height: 20px;
+        font-family: arial;
+    }
+    & strong {
+        font-weight: bold;
+    }
+    li {
+        &:last-child {
+            padding-left: 25px;
+        }
+    }
+}

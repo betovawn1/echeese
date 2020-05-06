@@ -1,0 +1,37 @@
+#institucional{
+    h2{
+        border-bottom: 3px solid #ed830c;
+        margin-bottom: 40px;
+        padding: 5px;
+        font-family: arial;
+    }
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+            }
+
+    #politica-comercial{
+        font-family: Arial;
+        .tikets{
+            text-transform: uppercase;
+                h4 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+        }
+                    .box {
+                    padding-bottom: 15px;
+                    padding-top: 10px;
+                    margin-bottom: 10px;
+                    border-bottom: 1px dashed; 
+                            ul {
+                                padding-left: 30px;
+                                li{
+                                    list-style: disc;
+                                }
+                            }
+                    }
+    
+    }
+
+}

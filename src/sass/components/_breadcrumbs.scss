@@ -1,0 +1,20 @@
+#box-bread-brumb {
+    margin: 0 15px 15px;
+    ul {
+        margin: 0;
+        li {
+            span {
+                color: #999 !important;
+            }
+            &:before {
+                content: '//';
+            }
+            &:first-child {
+                span {
+                    text-transform: uppercase;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
