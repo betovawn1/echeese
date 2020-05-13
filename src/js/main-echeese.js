@@ -11,31 +11,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 }
             }
         })
-
-    document.querySelector('.custom-col-minicart').addEventListener('click', function(ev){
-        document.getElementById('minicart').classList.add('d-block')
-        document.querySelector('.overlay-minicart').classList.add('minicart-is-open')
-    })
-    document.querySelector('#minicart .custom-minicart-footer .custom-minicart-buttons button').addEventListener('click', function(ev){
-        document.getElementById('minicart').classList.remove('d-block')
-        document.querySelector('.overlay-minicart').classList.remove('minicart-is-open')
-    })
-    if (window.innerWidth <= 1199) {
-        document.querySelector('.minicart-icon-mobile').addEventListener('click', function(ev){
-            document.getElementById('minicart').classList.add('d-block')
-        })
-        document.querySelector('#minicart .custom-minicart-footer .custom-minicart-buttons button').addEventListener('click', function(ev){
-            document.getElementById('minicart').classList.remove('d-block')
-        })
-    }
-    document.querySelector('.overlay-minicart').addEventListener('click', function(ev){
-        document.getElementById('minicart').classList.remove('d-block')
-        this.classList.remove('minicart-is-open')
-    })
-    document.getElementById('menu-hamburguer').addEventListener('click', function(ev) {
-        this.parentNode.classList.toggle('checked')
+    document.querySelector('.hamburguer-menu').addEventListener('click', function(ev) {
         document.getElementById('menu-mobile').classList.toggle('d-block')
-        document.getElementsByTagName('body')[0].classList.toggle('overflow-hidden')
     })
     document.getElementById('menu-mobile')
         .querySelectorAll('.menu-list-mobile h3')

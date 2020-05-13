@@ -1,4 +1,4 @@
-<div class="header-sup py-2">
+<div class="header-sup py-2 d-none d-lg-block">
     <div class="container">
         <div class="row">
             <div class="col-6 d-flex align-items-center">
@@ -165,32 +165,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-3 d-flex align-items-center">
-                    <div class="hamburguer-menu d-block d-lg-none">
-                        <input id="menu-hamburguer" type="checkbox" />
-    
-                        <label for="menu-hamburguer">
-                            <div class="menu">
-                                <span class="hamburguer"></span>
-                            </div>
-                        </label>
+                <div class="col-12 col-lg-3 d-flex align-items-center justify-content-center">
+                    <div class="hamburguer-menu d-block d-lg-none p-2">
+                        <div class="menu-mobile">
+                            <img src="/arquivos/hamburger-mobile.png" class="img-fluid" />
+                        </div>
                     </div>
                     <a href="/" title="STORE" class="d-flex align-items-center justify-content-center justify-content-lg-start link-logo mb-4 mb-lg-0">
                         <img src="/arquivos/logo.png" alt="Logo" />
                     </a>
                     <div class="minicart-icon-mobile custom-bg-color-primary d-flex d-lg-none align-items-center justify-content-center">
-                        <img src="/arquivos/minicart.png" class="img-fluid" alt="Minicart" />
+                        <img src="/arquivos/minicart-mobile.png" class="img-fluid" />
                     </div>
                 </div>
-                <div class="col-lg-7 d-flex flex-column pr-5">
+                <div class="col-12 col-lg-7 d-flex flex-column pr-lg-5">
                     <div class="search w-100">
                         <vtex.cmc:fullTextSearchBox />
                     </div>
-                    <nav class="d-flex align-items-start justify-content-between w-100 mt-3">
+                    <nav class="d-none d-lg-flex align-items-start justify-content-between w-100 mt-3">
                         <vtex.cmc:menuHeader />
                     </nav>
                 </div>
-                <div class="col-lg-2 mini-cart col-mini-cart">
+                <div class="col-lg-2 mini-cart col-mini-cart d-none d-lg-block">
                     <a title="Carrinho de Compras" href="/checkout/#/cart" class="btn btn-default btn-block btn-mini-cart">
                         <i class="fa fa-shopping-cart"></i>
                         <span class="hidden-sm mini-cart-label">Meu Carrinho</span>
