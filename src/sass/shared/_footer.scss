@@ -10,11 +10,14 @@
         font-weight: 700;
         margin-left: 0;
         padding-left: 0;
-        &:before {
-            content: "»";
-            font-size: 25px;
-            margin-right: 10px;
-            display: inline-block;
+    }
+    .col-atendimento {
+        ul {
+            font-size: 15px;
+            color: #4c4c4c;
+            li {
+                font-size: 20px;
+            }
         }
     }
     .apps {
@@ -41,7 +44,6 @@
     .col-inst-duvidas {
         ul {
             margin-top: 7px;
-            padding-left: 38px !important;
             li {
                 a {
                     font-size: 12px !important;

@@ -42,131 +42,18 @@
                             <li class="link-login mt-0"><a href="/account" title="Fazer Login">Entrar</a></li>
                             <li class="link-orders mt-0"><a href="/account/orders" title="Meus Pedidos">Meus Pedidos</a></li>
                         </ul>
+                        <div class="welcome-signed-mobile custom-text-color-dark">
+                            <img src="/arquivos/login.png" width="40" height="40" class="mr-1" />
+                            <span class="d-flex flex-wrap mt-3">Bem vindo<a href="/account" class="welcome-name"></a>!
+                            <a href="/no-cache/user/logout" class="welcome-logout ml-1">Sair</a></span>
+                        </div>
                     </div>
                     <div class="menu-list-mobile">
-                        <div class="p-relative h-100">
-                            <h3 class="mb-0 ml-0 h-100">
-                                <a class="custom-font-primary font-weight-bolder custom-text-5" href="#">Embalagens e Descartaveis</a>
-                            </h3>
-                            <div class="d-none pl-3 pt-3 pb-0 dropdown">
-                                <ul class="pr-4 mb-0">
-                                    <li>
-                                        <a href="#">
-                                            Bandejas e Pratos de Papelão
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Bobinas (Saco / Lisa) Plástica e PVC (Resinite)
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Caixas de Isopor e Tranp.Pizza 
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Canudos Plástico/Biodegradável e Mexedor
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Copos/Xícaras e Taças 
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Embalagens  e Folha (Rolo) de Alumínio em Geral 
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Embalagens/Bandejas/Discos e Copos de Isopor em Geral 
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Embalagens P/Bolos/Tortas/Salgados/Doces e Refeição 
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Embalagens para Confeitaria 
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Formas de Papel
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Guardanapos 
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Palitos/Espetos e Varetas   
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Papéis e Cartelas
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Potes/Baldes/Garrafas e Travessas  
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Pratos Plástico/Isopor e P/Confeitaria
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Sacos de Papel 
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Sacos e Folhas Plástica 
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Sacolas
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Talheres/Mexedores e Pazinhas
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Tampas P/Potes/Copos/Garrafas e Bandejas
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Toalhas P/Mesa/Bandeja e Cozinha
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Toalhas Rendada
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        <vtex.cmc:menuMobile />
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 d-flex align-items-center justify-content-center">
-                    <div class="hamburguer-menu d-block d-lg-none p-2">
+                    <div class="hamburguer-menu d-block d-lg-none p-3">
                         <div class="menu-mobile">
                             <img src="/arquivos/hamburger-mobile.png" class="img-fluid" />
                         </div>
@@ -214,3 +101,5 @@
         </div>
     </div>
 </header>
+
+<div class="d-none overlay-menu-mobile"></div>
