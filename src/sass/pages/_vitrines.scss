@@ -5,7 +5,6 @@
       margin-bottom: 30px !important;
       display: flex;
       flex-flow: wrap;
-      justify-content: center;
     }
     li {
       &:nth-child(odd) {
@@ -56,15 +55,23 @@
         margin-bottom: 5px;
       }
     }
+    .add {
+      a {
+        i {
+          display: none;
+        }
+      }
+    }
   }
   .box-item:hover img {
     opacity: 100% !important;
   }
   .price{
+    height: 71px;
     text-align: initial;
     span.best-price {
       display: block;
-      color: #0a80c5;
+      color: $color-primary;
       font-size: 25px;
       font-weight: 700;
       &:before {

@@ -1,11 +1,11 @@
 .footer {
-    border-top: 10px solid $color-secondary;
+    border-top: 10px solid $color-primary;
     border-bottom: none;
     background-color: $color-light-grey;
     padding: 15px 0 30px;
     border-bottom: 10px solid #dadada;
     b {
-        color: $color-secondary;
+        color: $color-primary;
         font-size: $text-size-7;
         font-weight: 700;
         margin-left: 0;
@@ -13,7 +13,7 @@
     }
     .col-atendimento {
         ul {
-            font-size: 15px;
+            font-size: 14px;
             color: #4c4c4c;
             li {
                 font-size: 20px;
@@ -98,7 +98,7 @@
             padding-top: 6px;
         }
         .televendas {
-            background-color: $color-secondary;
+            background-color: $color-primary;
             border-radius: 10px;
             text-align: center;
             color: $color-light;
@@ -130,10 +130,10 @@
             li {
                 line-height: 2;
                 list-style: disc;
-                color: $color-secondary;
+                color: $color-primary;
                 font-size: $text-size-5;
                 strong {
-                    color: $color-secondary;
+                    color: $color-primary;
                     @media (max-width: 575px) {
                         display: block;
                     }
@@ -158,7 +158,7 @@
                         &:before {
                             content: '-';
                             margin-right: 3px;
-                            color: $color-secondary;
+                            color: $color-primary;
                         }
                     }
                 }
