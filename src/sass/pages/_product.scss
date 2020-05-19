@@ -23,7 +23,7 @@
                 margin-bottom: 15px;
                 .productName {
                     font-size: 23px;
-                    color: $color-dark;
+                    color: $color-grey;
                 }
             }
             .codigo-avaliacoes {
@@ -35,6 +35,7 @@
                 margin: 0;
                 .codigo-produto {
                     padding: 0;
+                    color: $color-grey;
                     span,
                     div {
                         font-size: 14px;
@@ -54,18 +55,25 @@
                     .productPrice {
                         .descricao-preco {
                             margin-bottom: 0;
+                            .valor-de {
+                                font-size: 0;
+                                strong {
+                                    font-size: 14px;
+                                    color: $color-grey;
+                                }
+                            }
                             .price-best-price {
                                 .skuBestPrice {
                                     font-size: 35px;
                                     font-weight: 700;
-                                    color: $color-secondary;
+                                    color: $color-primary;
                                 }
                             }
                             .price-installments {
                                 margin-top: 10px;
                                 display: block !important;
                                 span {
-                                    color: $color-secondary;
+                                    color: $color-primary;
                                     font-style: normal;
                                     font-weight: 700;
                                     font-size: 20px;
@@ -73,12 +81,16 @@
                             }
                         }
                     }
+                    .economia-de {
+                        color: $color-grey;
+                        font-weight: 700;
+                    }
                 }
             }
             .pronta-entrega {
                 font-size: 12px;
                 font-weight: 700;
-                color: $color-secondary;
+                color: #0a80c5;
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
@@ -137,7 +149,7 @@
                                         display: inline-block;
                                         width: 35px;
                                         height: 29px;
-                                        background-image: url('https://castropil.myvtex.com/arquivos/shipping.png');
+                                        background-image: url('//echeese.vteximg.com.br/arquivos/shipping.png');
                                         background-repeat: no-repeat;
                                         background-size: contain;
                                         vertical-align: middle;
@@ -197,6 +209,37 @@
                                     }
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+        .product-description {
+            .product-description-box {
+                #description {
+                    h2 {
+                        border: 1px solid #d0d0d0;
+                        width: 125px;
+                        padding-top: 15px;
+                        border-bottom: 0;
+                        text-transform: uppercase;
+                        color: #333;
+                        font-family: "Arial";
+                        font-size: 14px;
+                        font-weight: 700;
+                        margin-bottom: 0;
+                        position: relative;
+                        bottom: -1px;
+                        background-color: #fff;
+                        text-align: center;
+                    }
+                    .productDescription {
+                        border-top: 1px solid #d0d0d0;
+                        padding-top: 30px;
+                        text-align: justify;
+                        span,
+                        strong {
+                            font-size: 14px !important;
                         }
                     }
                 }

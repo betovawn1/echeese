@@ -65,10 +65,23 @@
                         </div>
                     </div>
                 </div>
+                <div class="product-description product-description-mobile">
+                    <div class="product-description-box">
+                        <div id="description">
+                            <h2 class="title">Descrição</h2>
+                            <vtex.cmc:ProductDescription />
+                        </div>
+                    </div>
+                </div>
                 <div id="reviews" class="rating">
                     <vtex.cmc:UserReview/>
                 </div>
                 <div class="main-showcase">
+                    <div class="custom-title-colecao p-relative d-flex flex-row justify-content-center mt-4">
+                        <span class="custom-bg-color-light px-3 custom-z-index-1">
+                            <h3 class="text-uppercase d-inline-block mb-0 custom-bg-color-primary custom-text-8 custom-text-color-light p-3 custom-rounded-1 font-weight-bolder">Produtos Relacionados</h3>
+                        </span>
+                    </div>
                     <vtex:contentPlaceHolder id="Quem-viu-viu-tambem" />
                 </div>
             </section>
