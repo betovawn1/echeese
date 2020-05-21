@@ -10,9 +10,21 @@
                 content: '//';
             }
             &:first-child {
+                margin-right: 0 !important;
                 span {
                     text-transform: uppercase;
                     font-weight: 500;
+                }
+                a {
+                    background-image: url(//castropil.myvtex.com/arquivos/home.png);
+                    background-repeat: no-repeat;
+                    margin-right: 0 !important;
+                    background-size: contain;
+                    vertical-align: middle;
+                    display: inline-block;
+                    font-size: 0;
+                    height: 20px;
+                    width: 20px;
                 }
             }
         }

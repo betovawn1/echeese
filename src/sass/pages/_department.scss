@@ -10,22 +10,33 @@
                     .menu-departamento {
                         display: block !important;
                         h3 {
-                            display: none;
-                        }
-                        h4 {
-                            line-height: .8;
+                            display: block !important;
                             a {
-                                font-size: 14px;
+                                font-size: 0;
                                 font-weight: 700;
                                 text-transform: uppercase;
                                 color: $color-dark !important;
+                                &:before {
+                                    content: 'Filtros';
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        h4 {
+                            margin-bottom: 10px;
+                            line-height: 1;
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                            a {
+                                width: 100%;
+                                display: block;
+                                font-size: 13px;
+                                font-weight: 400;
+                                color: $color-dark !important;
                             }
                             + ul {
-                                display: none;
-                                margin-bottom: 3px;
-                                &.clicked {
-                                    display: block;
-                                }
+                                display: block;
                                 li {
                                     a {
                                         font-size: 13px;
@@ -38,14 +49,11 @@
                         h5 {
                             font-size: 14px;
                             font-weight: 700;
+                            margin-top: 15px;
                             text-transform: uppercase;
                             color: $color-dark !important;
                             + ul {
-                                display: none;
-                                margin-bottom: 3px;
-                                &.clicked {
-                                    display: block;
-                                }
+                                display: block;
                                 li {
                                     a {
                                         font-size: 13px;
@@ -99,30 +107,14 @@
                                 }
                             }
                         }
-                        h4,
+                        h3,
                         h5 {
                             position: relative;
                             cursor: pointer;
-                            &:after {
-                                content: '';
-                                background-image: url('//castropil.myvtex.com//arquivos/arrow.png');
-                                background-repeat: no-repeat;
-                                background-size: contain;
+                            a {
+                                width: 90%;
                                 display: block;
-                                height: 10px;
-                                width: 11px;
-
-                                position: absolute;
-                                top: 50%;
-                                right: 0;
-
-                                transition: .3s linear .1s;
-                                transform: translateY(-50%);
-                            }
-                            &.rotate {
-                                &:after {
-                                    transform: translateY(-50%) rotate(-180deg);
-                                }
+                                word-wrap: break-word;
                             }
                         }
                     }
@@ -151,6 +143,9 @@
                         ul {
                             li {
                                 width: 25% !important;
+                                @media (max-width: 767px) {
+                                    width: 50% !important;
+                                }
                             }
                         }
                     }
@@ -194,7 +189,7 @@
                             display: block !important;
                             position: absolute;
                             right: 15px;
-                            top: 42px;
+                            top: 75px;
                             @media (max-width: 767px) {
                                 display: none !important;
                             }
@@ -230,7 +225,7 @@
             margin-bottom: 20px !important;
             h2 {
                 background-color: $color-light;
-                transform: translateX(-50%);
+                transform: translate(-50%,-50%);
                 text-transform: uppercase;
                 color: $color-dark;
                 position: absolute;
@@ -240,11 +235,12 @@
                 padding: 0 20px;
                 z-index: 1;
                 left: 50%;
+                top: 50%;
             }
             margin-bottom: 30px;
             position: relative;
             padding-bottom: 0;
-            height: 20px;
+            height: 60px;
             border: 0;
             &:after {
                 content: '';

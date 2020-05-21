@@ -122,14 +122,14 @@
 #mini-cart-admake .mini-cart-item .qtd-valor .qtd,
 #mini-cart-admake .mini-cart-item .qtd-valor .preco {
     color: #9c9c9c;
-    font-family: Verdana;
+    font-family: $font-primary;
     font-size: 12px;
     font-weight: 400;
 }
 
 #mini-cart-admake .mini-cart-totais span {
     color: #535353;
-    font-family: Verdana;
+    font-family: $font-primary;
     font-size: 12px;
     font-weight: 400;
 }
@@ -141,7 +141,7 @@
 
 #mini-cart-admake #mini-cart-admake-total {
     color: #535353;
-    font-family: Verdana;
+    font-family: $font-primary;
     font-size: 12px;
     font-weight: 400;
 }

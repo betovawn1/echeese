@@ -38,18 +38,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
                     this.nextElementSibling.classList.toggle('d-block')
                 })
             })
-    document.querySelectorAll('#departament-navegador .navigation h4').forEach(function(h4) {
-        h4.addEventListener('click', function(ev) {
-            this.classList.toggle('rotate')
-            this.nextElementSibling.classList.toggle('clicked')
-        })
-    })
-    document.querySelectorAll('#departament-navegador .navigation h5').forEach(function(h5) {
-        h5.addEventListener('click', function(ev) {
-            this.classList.toggle('rotate')
-            this.nextElementSibling.classList.toggle('clicked')
-        })
-    })
+    // document.querySelectorAll('#departament-navegador .navigation h4').forEach(function(h4) {
+    //     h4.addEventListener('click', function(ev) {
+    //         this.classList.toggle('rotate')
+    //         this.nextElementSibling.classList.toggle('clicked')
+    //     })
+    // })
+    // document.querySelectorAll('#departament-navegador .navigation h5').forEach(function(h5) {
+    //     h5.addEventListener('click', function(ev) {
+    //         this.classList.toggle('rotate')
+    //         this.nextElementSibling.classList.toggle('clicked')
+    //     })
+    // })
     // init
     // function getOrder(){
     //     console.log('getOrder')

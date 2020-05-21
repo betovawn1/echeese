@@ -3,37 +3,27 @@
     <head>
         <title>E-Cheese</title>
         <vtex:metaTags/>
+    
         <link href="/arquivos/ion.rangeSlider.css" rel="stylesheet" type="text/css" />
         <link href="/arquivos/ion.rangeSlider.skinHTML5.css" rel="stylesheet" type="text/css" />
         <script src="/arquivos/ion.rangeSlider.min.js"></script>
+    
         <vtex:template id="commonStyles" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
-    <body id="department-page">
+    <body id="busca-vazia-page">
         <div class="page">
             <vtex:template id="Header" />
-            <div class="container">
+            <section id="busca-vazia-content" class="container">
                 <div class="row">
-                    <div id="box-bread-brumb" class="col-12">
-                        <vtex.cmc:breadCrumb />
-                    </div>
-                    <aside class="col-md-2 hidden-xs hidden-sm sidebar">
-                        <div id="departament-navegador">
-                            <!--vtex.cmc:singleDepartmentNavigator/-->
-                            <vtex.cmc:singleDepartmentNavigator />
-                            <!--vtex.cmc:singleDepartmentNavigator/-->
-                        </div>        	
-                    </aside>
-                    <article id="main-content" class="col-12 col-xl-10">               
+                    <article id="main-content" class="col-12">
                         <div class="title-category">
-                            <vtex.cmc:searchTitle />
-                        </div>
-                        <div class="showcase-default">
-                            <vtex.cmc:searchResult layout="ef3fcb99-de72-4251-aa57-71fe5b6e149f" itemCount="16"  columnCount="4" />
+                            <a href="#" class="pull-right" onclick="window.history.back();"><i class="fa fa-chevron-left"></i> Voltar</a> 
+                            <h2>Ops, não encontramos nada em sua busca</h2>
                         </div>
                     </article>
                 </div>
-            </div>
+            </section>
             <vtex:template id="Footer" />
         </div>
     </body>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+    <head>
+        <title>E-Cheese</title>
+        <vtex:metaTags/>
+        <vtex:template id="commonStyles" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    </head>
+ 
+    <body id="account-page">
+        <div class="page">
+            <vtex:template id="Header" />
+            <section id="account-content" class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <vtex.cmc:accountUserProfile />
+                    </div>
+                </div>
+            </section>
+            <vtex:template id="Footer" />
+        </div>
+    </body>
+    <vtex:template id="commonScripts" />
+    <script type="text/javascript">
+        $(document).ready( function(){
+            var hash = $(location).attr('hash');
+            var $links = $('a[data-toggle="modal"]');
+ 
+            $.each( $links, function(){
+                var $this = $(this);
+                if( $this.attr('href') === hash ){
+                    $this.click();
+                } 
+            });
+        })
+    </script>
+</html>
