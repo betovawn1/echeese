@@ -246,8 +246,16 @@
             }
         }
         #reviews {
+            padding-top: 30px;
+            border-top: 1px solid #d0d0d0;
             #lnkPubliqueResenha {
                 background-color: $color-primary;
+            }
+            .user-review {
+                > h4 {
+                    font-weight: 600;
+                    font-size: 20px;
+                }
             }
         }
     }
